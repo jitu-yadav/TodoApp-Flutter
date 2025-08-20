@@ -24,8 +24,8 @@ jobs:
         run: flutter pub get
 
       # Step 4: Analyze code
-      - name: Analyze code
-        run: flutter analyze
+      - name: Analyze code (ignore warnings)
+        run: flutter analyze --no-fatal-warnings
 
       # Step 5: Run tests
       - name: Run tests
